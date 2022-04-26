@@ -1,0 +1,83 @@
+@import "./../../../styles/global.scss";
+
+.footer {
+  .background {
+    background-color: #f9fbfd;
+  }
+  .boxTop {
+    @extend .grid;
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 0;
+    .content {
+      h5 {
+        @extend .titleCommon;
+        font-size: 1.3rem;
+        margin: 0 0 0.25rem;
+      }
+      p {
+        @extend .textCommon;
+        margin: 0;
+      }
+    }
+    .apps {
+      display: flex;
+      align-items: center;
+      .app {
+        width: 160px;
+        height: 50px;
+        display: block;
+        margin: 0 10px;
+      }
+      .app:nth-child(1) {
+        background: url("../../../../../public/assets/images/download_buttons.svg")
+          0 -50px;
+        margin-left: 0;
+      }
+      .app:nth-child(2) {
+        background: url("../../../../../public/assets/images/download_buttons.svg")
+          0 -101px;
+      }
+      .app:nth-child(3) {
+        background: url("../../../../../public/assets/images/download_buttons.svg")
+          0 0;
+      }
+    }
+  }
+  .boxBottom {
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+    @extend .grid;
+    .icons {
+      .logo {
+        color: $blue;
+        font-size: 1.3rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+      }
+      .socialMedia {
+        display: flex;
+        align-items: center;
+        svg {
+          fill: #5a749a;
+          width: 20;
+          height: 20;
+          margin-right: 0.3rem;
+        }
+      }
+    }
+    .title {
+      color: #4a545e;
+      font-weight: 700;
+      font-size: 0.75rem;
+      margin-bottom: 0.7rem;
+    }
+    .item {
+      display: block;
+      margin-bottom: 0.75rem;
+      color: #4a545e;
+      font-size: 1.1rem;
+    }
+  }
+}
