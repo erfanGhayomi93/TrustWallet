@@ -1,10 +1,11 @@
+import { Container } from "@mui/material";
 import React from "react";
 import styles from "./moreThan.module.scss";
 
 export default function MoreThan() {
   return (
     <div className={styles.morethan}>
-      <div className="grid">
+      <Container>
         <div className={styles.box}>
           <div className={styles.item}>
             <h5>The most trusted & secure crypto wallet</h5>
@@ -22,7 +23,7 @@ export default function MoreThan() {
             <img src="/assets/images/moreThanPic.png" alt="" />
           </div>
         </div>
-      </div>
+      </Container>
     </div>
   );
 }

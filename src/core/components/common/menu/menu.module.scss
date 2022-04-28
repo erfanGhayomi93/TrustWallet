@@ -5,13 +5,15 @@
   .menu {
     display: flex;
     justify-content: space-between;
-    padding: 0.5rem 0;
+    padding: 1.55rem 20px;
     align-items: center;
     .logo {
       display: flex;
       align-items: center;
+      margin-right: 20px;
       img {
         height: 38px;
+        border-radius: 12px;
       }
       .textLogo {
         color: white;
@@ -25,10 +27,12 @@
       display: flex;
       list-style: none;
       align-items: center;
+      margin: 0;
       .menuItem {
         color: white;
         font-weight: 600;
-        padding: 0 1.5rem;
+        padding: 8px 24px;
+        font-size: 0.93rem;
         .badge {
           display: inline-block;
           padding: 0.2rem 0.5rem;

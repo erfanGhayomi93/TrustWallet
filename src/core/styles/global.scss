@@ -1,4 +1,7 @@
 $blue: #0b65c6;
+body {
+  font-family: ibmplexsans, sans-serif;
+}
 
 .grid {
   width: 1000px;
@@ -14,4 +17,7 @@ $blue: #0b65c6;
   color: #4a545e;
   font-weight: 400;
   font-size: 1.3rem;
+}
+.css-xdmu94-MuiContainer-root {
+  max-width: 1040px !important;
 }

@@ -1,10 +1,11 @@
+import { Container } from "@mui/material";
 import React from "react";
 import styles from "./menu.module.scss";
 
 export default function MenuView() {
   return (
     <div className={styles.container}>
-      <div className={`${styles.menu} grid`}>
+      <Container maxWidth="md" className={`${styles.menu}`}>
         <div className={styles.logo}>
           <img src="/assets/images/logo.png" alt="" />
           <span className={styles.textLogo}>Trust Wallet</span>
@@ -17,7 +18,7 @@ export default function MenuView() {
             </li>
           ))}
         </ul>
-      </div>
+      </Container>
     </div>
   );
 }
@@ -27,6 +28,6 @@ const data = [
   { label: "Staking" },
   { label: "Earn", badge: "+11% APR" },
   { label: "NFTs" },
-  { label: "DApp BROWSER" },
+  { label: "DApp Browser" },
   { label: "Language" },
 ];
