@@ -5,7 +5,7 @@ import styles from "./moreThan.module.scss";
 export default function MoreThan() {
   return (
     <div className={styles.morethan}>
-      <Container>
+      <Container maxWidth="md" className={styles.container}>
         <div className={styles.box}>
           <div className={styles.item}>
             <h5>The most trusted & secure crypto wallet</h5>

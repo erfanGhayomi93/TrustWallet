@@ -4,12 +4,12 @@ import InventoryIcon from "@mui/icons-material/Inventory";
 import CurrencyExchangeIcon from "@mui/icons-material/CurrencyExchange";
 import LockOpenIcon from "@mui/icons-material/LockOpen";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
-import { Button } from "@mui/material";
+import { Button, Container } from "@mui/material";
 
 export default function EveryThing() {
   return (
     <div className={styles.EveryThing}>
-      <div className="grid">
+      <Container maxWidth="md">
         <div className={styles.top}>
           <div className={styles.item}>
             <InventoryIcon />
@@ -73,7 +73,7 @@ export default function EveryThing() {
           </div>
         </div>
         <div></div>
-      </div>
+      </Container>
     </div>
   );
 }

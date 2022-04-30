@@ -1,12 +1,13 @@
 import React from "react";
 import styles from "./footer.module.scss";
 import FacebookIcon from "@mui/icons-material/Facebook";
+import { Container } from "@mui/material";
 
 export default function FooterView() {
   return (
     <div className={styles.footer}>
       <div className={styles.background}>
-        <div className={styles.boxTop}>
+        <Container maxWidth="md" className={styles.boxTop}>
           <div className={styles.content}>
             <h5>Get the Trust Wallet app now!</h5>
             <p>The most trusted & secure crypto wallet</p>
@@ -16,10 +17,10 @@ export default function FooterView() {
             <div className={styles.app}></div>
             <div className={styles.app}></div>
           </div>
-        </div>
+        </Container>
       </div>
 
-      <div className={styles.boxBottom}>
+      <Container maxWidth="md" className={styles.boxBottom}>
         <div className={styles.icons}>
           <div className={styles.logo}>Trust Wallet</div>
           <div className={styles.socialMedia}>
@@ -41,7 +42,7 @@ export default function FooterView() {
             ))}
           </div>
         ))}
-      </div>
+      </Container>
     </div>
   );
 }

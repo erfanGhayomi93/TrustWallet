@@ -1,9 +1,10 @@
+import { Container } from "@mui/material";
 import React from "react";
 import styles from "./cardImgWithText.module.scss";
 
 export default function CardImgWithText({ data }) {
   return (
-    <div className="grid">
+    <Container maxWidth="md">
       <div
         className={styles.root}
         style={{ flexDirection: data.row_reverse ? "row-reverse" : "row" }}
@@ -17,6 +18,6 @@ export default function CardImgWithText({ data }) {
           <p className={styles.text}>{data.text}</p>
         </div>
       </div>
-    </div>
+    </Container>
   );
 }

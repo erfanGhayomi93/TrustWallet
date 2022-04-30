@@ -1,7 +1,7 @@
 import "./App.css";
 import Menu from "./core/components/common/menu";
 import Home from "./pages/home";
-import "./core/styles/global.scss";
+import "./core/styles/_global.scss";
 import Footer from "./core/components/common/footer";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 

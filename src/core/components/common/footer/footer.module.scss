@@ -1,14 +1,15 @@
-@import "./../../../styles/global.scss";
+@use "./../../../styles/_global.scss";
 
 .footer {
   .background {
     background-color: #f9fbfd;
   }
   .boxTop {
-    @extend .grid;
     display: flex;
     justify-content: space-between;
-    padding: 3rem 0;
+    margin: auto;
+    padding: 48px 20px;
+
     .content {
       h5 {
         @extend .titleCommon;
@@ -27,7 +28,7 @@
         width: 160px;
         height: 50px;
         display: block;
-        margin: 0 10px;
+        margin: 0 20px;
       }
       .app:nth-child(1) {
         background: url("../../../../../public/assets/images/download_buttons.svg")
@@ -48,10 +49,10 @@
     padding: 3rem 0;
     display: flex;
     justify-content: space-between;
-    @extend .grid;
     .icons {
+      padding: 0 20px;
       .logo {
-        color: $blue;
+        color: var(--blue);
         font-size: 1.3rem;
         font-weight: 700;
         margin-bottom: 1rem;
@@ -63,7 +64,10 @@
           fill: #5a749a;
           width: 20;
           height: 20;
-          margin-right: 0.3rem;
+          margin-right: 0.75rem;
+          &:last-child {
+            margin-right: 0;
+          }
         }
       }
     }
@@ -71,13 +75,40 @@
       color: #4a545e;
       font-weight: 700;
       font-size: 0.75rem;
-      margin-bottom: 0.7rem;
+      margin-top: 0;
+      margin-bottom: 0.9rem;
     }
     .item {
       display: block;
-      margin-bottom: 0.75rem;
+      margin-bottom: 1.3rem;
       color: #4a545e;
       font-size: 1.1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .footer {
+    text-align: center;
+    .boxTop {
+      flex-direction: column;
+      .apps {
+        flex-direction: column;
+        margin-top: 1.5rem;
+        .app {
+          margin: 10px 0 !important;
+        }
+      }
+    }
+    .boxBottom {
+      flex-direction: column;
+      align-items: center;
+      .socialMedia {
+        margin-right: 1.5rem;
+      }
+      .title {
+        margin-top: 2rem;
+      }
     }
   }
 }

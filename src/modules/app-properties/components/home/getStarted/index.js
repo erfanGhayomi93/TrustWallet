@@ -1,11 +1,11 @@
-import { Button } from "@mui/material";
+import { Button, Container } from "@mui/material";
 import React from "react";
 import styles from "./getStarted.module.scss";
 
 export default function GetStarted() {
   return (
-    <div className={styles.getStarted}>
-      <div className="grid">
+    <Container maxWidth="md" className={styles.getStarted}>
+      <div>
         <h4 className={styles.title}>Get started in 3 simple steps</h4>
         <p className={styles.text}>It only takes a few minutes</p>
       </div>
@@ -45,6 +45,6 @@ export default function GetStarted() {
       <div className={styles.buttons}>
         <Button variant="contained">Download Now</Button>
       </div>
-    </div>
+    </Container>
   );
 }

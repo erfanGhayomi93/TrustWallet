@@ -1,0 +1,31 @@
+.titleCommon {
+  font-weight: 700;
+  font-size: 2.6rem;
+  letter-spacing: -0.02em;
+}
+.textCommon {
+  color: #4a545e;
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+.css-xdmu94-MuiContainer-root {
+  max-width: 1040px !important;
+}
+
+@media screen and (max-width: 992px) {
+  .css-xdmu94-MuiContainer-root {
+    width: 90% !important;
+    margin: auto;
+  }
+
+  .titleCommon {
+    font-weight: 700;
+    font-size: 2.1rem;
+    letter-spacing: -0.02em;
+  }
+  .textCommon {
+    color: #4a545e;
+    font-weight: 400;
+    font-size: 1.1rem;
+  }
+}
